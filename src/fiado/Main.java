@@ -7,7 +7,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		// conjunro finito e ordenado
+		// conjunto finito e ordenado
 		int[] fiados = new int[10];
 //      fiados[0] = 12
 //      fiados[3] = 87
@@ -17,19 +17,27 @@ public class Main {
 		String nome = scanner.nextLine();
 		System.out.println("Informe o valor da compra: ");
 		fiados[0] = Integer.valueOf(scanner.nextLine());
+        System.out.println("Informe seu número de telefone: ");
+        String tel = scanner.nextLine();
+        
 		
 		int total = somawhile(fiados);
 		
 		if (total > 100) {
 			System.out.println("Cliente " + nome + " deve: " + total + " ganhou um brinde!");
 		} else {
-			System.out.println("Cliente " + nome + " deve: " + total);
+			System.out.println("Cliente " + nome + " deve: " + total);		
 		}
 		
-		
+		System.out.println("Cliente " + nome + ", número de telefone é: " + tel);
 		// CTRL+SHIFT+F = ajeita codigo
 		System.out.println("Total: " + total);
 
+	}
+
+	private static String formatString(String string, String string2) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	public static int somawhile(int[] fiados) {
@@ -44,6 +52,8 @@ public class Main {
 	}
 	
 }
+
+
 
 
 	
